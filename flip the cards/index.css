@@ -1,0 +1,65 @@
+
+  body{
+    height:100%;
+    background-color: lightslategray;
+    /* background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdWeAoUGfZAUyUQmBmVise6mr-na8AhB8IyQ&usqp=CAU");
+      */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    text-align: center;
+ 
+}
+  .name{
+    font-size: 130px;
+    text-align:center;
+    perspective: 500px;
+    position:absolute;
+    margin-top: -120px;
+     left:50%;
+     text-shadow: 2px; 
+     
+    transform: translate(-50%, -50%);
+  }
+  span{
+    display:inline-block;  /* margin-left:-15px; */
+    /* color:whitesmoke; */
+    color:cornsilk;
+    transform-origin: 50% 70%;
+    text-align: center;
+    font-style: italic;
+  
+  }
+  .opts{
+      /* text-align: center; */
+      display:flex; 
+      justify-content: space-evenly;
+      font-size: 50px; 
+      margin-top: 350px;
+      padding-top: 20px;
+      left:30%; 
+     
+  }
+  span:nth-child(1){
+    animation: flipper 1s cubic-bezier(0.68, -0.55, 0.26, 1.55) both, fadeIn 1s both;
+  }
+
+  @keyframes flipper{
+    from{transform: rotateX(90deg);}
+    to{transform: rotateX(0deg);}
+  }
+  
+  @keyframes fadeIn{
+    from{opacity:0};
+    to{opacity:1};
+  }
+  a img{
+    width:40px;
+    height:40px;
+    margin:2px;
+  }
+  a{
+    color: rgb(43, 40, 40);
+    text-decoration: none;
+    border-top: 30px;
+  }
